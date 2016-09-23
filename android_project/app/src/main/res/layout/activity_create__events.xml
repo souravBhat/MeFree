@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gcm.play.android.samples.com.gcmquickstart.Create_Events">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar" />
+<LinearLayout
+    android:id="@+id/event_nameLinear"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/app_bar"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Event Name:"
+        android:id="@+id/tvEventName"
+        android:textColor="@color/DarkGreyText"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/eTName"
+        android:textColor="@color/DarkGreyText"
+        android:layout_margin="10dp"
+        android:layout_gravity="fill_horizontal"
+        android:scrollbars="vertical"
+        android:maxLines="2"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/event_nameLinear"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:layout_weight="1"
+            android:id="@+id/tvDisplayDate"
+            android:textColor="@color/DarkGreyText"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Time"
+            android:layout_weight="1"
+            android:id="@+id/tvDisplayTime"
+            android:textColor="@color/DarkGreyText"
+            android:padding="5dp"
+            android:gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/tVTime"
+        android:textColor="@color/DarkGreyText"
+        android:layout_alignTop="@+id/tVDate"
+        android:layout_alignRight="@+id/btCreateEvent"
+        android:layout_alignEnd="@+id/btCreateEvent"/-->
+    <LinearLayout
+        android:id="@+id/locationLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/timeLinear"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Location:"
+            android:id="@+id/tVLocation"
+            android:textColor="@color/DarkGreyText"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:id="@+id/eTLocation"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:scrollbars="vertical"
+            android:maxLines="2"
+            android:textColor="@color/DarkGreyText"/>
+    </LinearLayout>
+  <LinearLayout
+      android:id="@+id/descriptionLinear"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"    android:layout_alignParentLeft="true"
+      android:layout_below="@id/locationLinear"
+      android:layout_alignParentStart="true"
+      android:layout_margin="10dp"
+      android:orientation="vertical">
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Description:"
+          android:id="@+id/tVDesc"
+          android:textColor="@color/DarkGreyText"
+          android:layout_below="@+id/eTLocation"
+          android:layout_alignLeft="@+id/btCreateEvent"
+          android:layout_alignStart="@+id/btCreateEvent" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:scrollbars="vertical"
+          android:maxLines="5"
+          android:id="@+id/eTDesc"
+          android:textColor="@color/DarkGreyText"/>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/descriptionLinear"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:id="@+id/btCreateEvent"
+            android:background="@drawable/button_custom"
+            android:textColor="@color/Button_text_color"
+            android:onClick="createEvent"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

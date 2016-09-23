@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gcm.play.android.samples.com.gcmquickstart.Event_Description">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout1"
+    android:layout_below="@+id/app_bar"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="32dp"
+    android:layout_marginLeft="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Event Name:"
+        android:id="@+id/tVen"
+        android:textColor="@color/DarkGreyText"
+        android:layout_below="@+id/app_bar"
+ />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DisplayName"
+        android:textColor="@color/DarkGreyText"
+        android:id="@+id/event_name" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/layout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentStart="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Location:"
+        android:id="@+id/tVLO"
+        android:textColor="@color/DarkGreyText"
+/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DisplayLocation"
+        android:textColor="@color/DarkGreyText"
+        android:id="@+id/location"
+        android:layout_below="@+id/tVLO"
+        android:layout_alignLeft="@+id/tVLO"
+        android:layout_alignStart="@+id/tVLO" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/layout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tVDT"
+        android:textColor="@color/DarkGreyText"
+
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YYYY/MM/DD HH:MM"
+        android:textColor="@color/DarkGreyText"
+        android:id="@+id/date"
+        android:layout_below="@+id/tVDT"
+        android:layout_alignLeft="@+id/tVDT"
+        android:layout_alignStart="@+id/tVDT" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout4"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/layout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tVDesc"
+        android:textColor="@color/DarkGreyText"
+
+        android:layout_below="@+id/date"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Here is description"
+        android:textColor="@color/DarkGreyText"
+        android:id="@+id/description"
+
+        android:layout_below="@+id/tVDesc"
+        android:layout_alignLeft="@+id/tVDesc"
+        android:layout_alignStart="@+id/tVDesc" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/btAccept"
+           android:text="Accept"
+           android:textColor="@color/Button_text_color"
+           android:layout_margin="8dp"
+           android:layout_marginBottom="10dp"
+           android:onClick="onAccept"
+           android:background="@drawable/button_custom"
+           />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btDecline"
+            android:text="Decline"
+            android:textColor="@color/Button_text_color"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onDecline"
+            android:background="@drawable/button_custom"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSeeGoning"
+            android:text="See Going"
+            android:textColor="@color/Button_text_color"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onSeeGoing"
+            android:background="@drawable/button_custom"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

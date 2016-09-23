@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gcm.play.android.samples.com.gcmquickstart.AddFriend">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar" />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row"
+        android:orientation="horizontal"
+        android:layout_below="@id/app_bar">
+
+        <EditText
+            android:id="@+id/friend_name"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="#000"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:onClick="addFriend"/>
+
+    </LinearLayout>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friend_recycler_view"
+        />
+
+</RelativeLayout>
+

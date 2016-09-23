@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="gcm.play.android.samples.com.gcmquickstart.Current_Friends">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar" />
+    <ListView
+        android:id="@+id/current_going"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="@color/DarkGreyText"
+        android:layout_weight="1"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No one has joined yet. Be the first!"
+        android:textColor="#aaa"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+
+
+
+</LinearLayout>

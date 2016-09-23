@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/eventsAttending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:divider="@color/DarkGreyText"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="You are not attending any event. Create one!"
+                android:textColor="#aaa"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigationbar"
+            android:name="gcm.play.android.samples.com.gcmquickstart.Navigation_fragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_fragment"
+            tools:layout="@layout/fragment_navigation_fragment" />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

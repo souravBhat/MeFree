@@ -1,0 +1,31 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="gcm.play.android.samples.com.gcmquickstart.Dash_board">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/appbar" />
+
+    </RelativeLayout>
+
+
+    <fragement
+        android:id="@+id/fragment_navigationbar"
+        android:name=".Navigation_fragment"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_fragment"
+        tools:layout="@layout/fragment_navigation_fragment" />
+
+
+</android.support.v4.widget.DrawerLayout>
+

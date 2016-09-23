@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MeFree</string>
+    <string name="gcm_send_message">Connected!.</string>
+    <string name="registering_message">Connecting to server.Please wait...</string>
+    <string name="token_error_message">Error connecting to the internet. Please try
+        running the sample again.</string>
+    <string name="title_activity_dash_board">Dash_board</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_new__invites">New_Invites</string>
+    <string name="title_activity_add_friend">AddFriend</string>
+
+    <!--Howard -->
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_email">Enter a unique user name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="search_hint">Search friends to add!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
+    <string name="title_activity_current__friends">Current_Friends</string>
+    <string name="title_activity_create__events">Create_Events</string>
+    <string name="title_activity_events__attending">Events_Attending</string>
+    <string name="title_activity_friend_request_received">FriendRequestReceived</string>
+    <string name="title_activity_event__description">Event_Description</string>
+    <string name="title_activity_going_list">Going_listActivity</string>
+    <string name="title_activity_send_invite_to_friends">sendInviteToFriends</string>
+    <string name="action_logout">Logout</string>
+</resources>
